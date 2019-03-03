@@ -1,7 +1,7 @@
 import 'package:dartIntermediate/dartIntermediate.dart' as myCode;
-
+import 'package:http/http.dart' as http;
 import 'dart:convert';
-
+/*
 main(List<String> arguments) {
   myCode.sayHello();
 
@@ -18,4 +18,15 @@ main(List<String> arguments) {
   print("Encoded: ${decoded}");
 
   //Encryption is made to be strong and encoding is made to be weak
+}
+*/
+
+//packages http
+main(List<String> arguments) {
+  var url = "http://www.voidrealms.com";
+
+  http.get(url).then((response){
+print("Response status code: ${response.statusCode}");
+print("Response body: ${response.body}");
+  });
 }
