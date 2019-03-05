@@ -1,5 +1,6 @@
 import 'package:dartIntermediate/dartIntermediate.dart' as myCode;
 import 'package:http/http.dart' as http;
+import 'package:path/path.dart' as path;
 import 'dart:convert';
 /*
 main(List<String> arguments) {
@@ -22,6 +23,7 @@ main(List<String> arguments) {
 */
 
 //packages http
+/*
 main(List<String> arguments) {
   var url = "http://www.voidrealms.com";
 
@@ -29,4 +31,16 @@ main(List<String> arguments) {
 print("Response status code: ${response.statusCode}");
 print("Response body: ${response.body}");
   });
+}
+ */
+
+//homework
+
+main(List<String> arguments) {
+  var dpath = "C:\\";
+  var fname = "camera.txt";
+
+  var text = path.join(dpath, fname);
+  print(text);
+
 }
