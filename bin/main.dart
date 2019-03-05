@@ -2,6 +2,7 @@ import 'package:dartIntermediate/dartIntermediate.dart' as myCode;
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as path;
 import 'dart:convert';
+import 'package:dartIntermediate/myClass.dart';
 /*
 main(List<String> arguments) {
   myCode.sayHello();
@@ -35,7 +36,7 @@ print("Response body: ${response.body}");
  */
 
 //homework
-
+/*
 main(List<String> arguments) {
   var dpath = "C:\\";
   var fname = "camera.txt";
@@ -44,3 +45,16 @@ main(List<String> arguments) {
   print(text);
 
 }
+*/
+
+//classes
+
+main(List<String> arguments) {
+  MyClass mine = new MyClass();
+  mine.sayHello("Paco");
+
+  MyClass yours = new MyClass();
+  yours.sayHello("Julio");
+}
+
+
