@@ -48,7 +48,7 @@ main(List<String> arguments) {
 */
 
 //classes
-
+/*
 main(List<String> arguments) {
   MyClass mine = new MyClass();
   mine.sayHello("Paco");
@@ -56,5 +56,14 @@ main(List<String> arguments) {
   MyClass yours = new MyClass();
   yours.sayHello("Julio");
 }
+*/
 
+//Class constructor
+import 'package:dartIntermediate/animal.dart';
+main(List<String> arguments) {
+  Animal cat = new Animal("Paco");
+  Animal dog = new Animal("Julio");
+  cat.sayHello();
+  dog.sayHello();
+}
 
