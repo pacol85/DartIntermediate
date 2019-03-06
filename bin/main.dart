@@ -59,6 +59,7 @@ main(List<String> arguments) {
 */
 
 //Class constructor
+/*
 import 'package:dartIntermediate/animal.dart';
 main(List<String> arguments) {
   Animal cat = new Animal("Paco");
@@ -66,4 +67,23 @@ main(List<String> arguments) {
   cat.sayHello();
   dog.sayHello();
 }
+*/
 
+//This keyword
+/*
+import 'package:dartIntermediate/dog.dart';
+main(List<String> arguments) {
+
+  Dog bob = new Dog(6, "Bob");
+
+  print("${bob.name} is ${bob.ageInDogYears()} years old");
+}
+*/
+
+//Homework
+import 'package:dartIntermediate/employee.dart';
+main(List<String> arguments) {
+  Employee emp = new Employee();
+
+  emp.showData();
+}
