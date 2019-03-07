@@ -92,6 +92,7 @@ main(List<String> arguments) {
  */
 
 //Scopes
+/*
 import 'package:dartIntermediate/animal.dart';
 main(List<String> arguments) {
   Animal cat = Animal("Paco");
@@ -105,4 +106,23 @@ main(List<String> arguments) {
       }
     }
   }
+}
+*/
+
+//Scopes public and private
+
+import 'package:dartIntermediate/animal.dart';
+main(List<String> arguments) {
+  Animal cat = new Animal("fluffy", 16, "Short hair");
+
+  cat.breed = "mixed";
+  /*
+  cat.age = 19;
+  bin/main.dart:119:7: Error: The setter 'age' isn't defined for the class '#lib1::Animal'.
+Try correcting the name to the name of an existing setter, or defining a setter or field named 'age'.
+  cat.age = 19;
+   */
+  cat.sayHello();
+
+  cat.saySomething("miau");
 }
