@@ -144,7 +144,7 @@ main(List<String> arguments) {
 */
 
 //Getters and Setters
-
+/*
 import 'package:dartIntermediate/animal.dart';
 main(List<String> arguments) {
   Animal cat = new Animal();
@@ -153,4 +153,13 @@ main(List<String> arguments) {
   Animal fish = new Animal();
 
   Animal.run();
+}
+*/
+
+//homework scopes
+import 'package:dartIntermediate/person.dart';
+main(List<String> args){
+  Person paco = new Person(33);
+
+  print("The person's age is: ${paco.age}");
 }
