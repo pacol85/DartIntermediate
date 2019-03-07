@@ -1,6 +1,6 @@
 class Animal{
   String _name = '';
-  String name = "";
+  //String name = "";
 /*
   Animal(){
     print("constructed");
@@ -24,12 +24,25 @@ class Animal{
 
 String breed = "";
 int _age = 0;
-
+/*
 Animal(String name, int age, String breed){
   _name = name;
   _age = age;
   this.breed = breed;
 }
+*/
+
+  Animal(String name, int age){
+    _name = name;
+    _age = age * 7;
+  }
+
+  String get name => _name;
+  void set name(String value) => _name = value;
+
+  int get age => _age;
+  void set age(int value) => _age = value * 7;
+
 /*
   void sayHello(){
     if(_name.isEmpty){

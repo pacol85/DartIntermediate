@@ -110,7 +110,7 @@ main(List<String> arguments) {
 */
 
 //Scopes public and private
-
+/*
 import 'package:dartIntermediate/animal.dart';
 main(List<String> arguments) {
   Animal cat = new Animal("fluffy", 16, "Short hair");
@@ -125,4 +125,19 @@ Try correcting the name to the name of an existing setter, or defining a setter 
   cat.sayHello();
 
   cat.saySomething("miau");
+}
+*/
+
+//Getters and Setters
+
+import 'package:dartIntermediate/animal.dart';
+main(List<String> arguments) {
+  Animal dog = new Animal("Rango", 6);
+
+  dog.name = "Fiddo";
+  print(dog.name);
+
+  print(dog.age); //getter
+  dog.age = 4; //setter
+  print(dog.age); //getter
 }
