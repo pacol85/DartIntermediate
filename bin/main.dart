@@ -129,7 +129,7 @@ Try correcting the name to the name of an existing setter, or defining a setter 
 */
 
 //Getters and Setters
-
+/*
 import 'package:dartIntermediate/animal.dart';
 main(List<String> arguments) {
   Animal dog = new Animal("Rango", 6);
@@ -140,4 +140,17 @@ main(List<String> arguments) {
   print(dog.age); //getter
   dog.age = 4; //setter
   print(dog.age); //getter
+}
+*/
+
+//Getters and Setters
+
+import 'package:dartIntermediate/animal.dart';
+main(List<String> arguments) {
+  Animal cat = new Animal();
+  Animal dog = new Animal();
+  Animal bird = new Animal();
+  Animal fish = new Animal();
+
+  Animal.run();
 }

@@ -32,6 +32,7 @@ Animal(String name, int age, String breed){
 }
 */
 
+/*
   Animal(String name, int age){
     _name = name;
     _age = age * 7;
@@ -42,6 +43,22 @@ Animal(String name, int age, String breed){
 
   int get age => _age;
   void set age(int value) => _age = value * 7;
+*/
+
+  static int _counter = 0; //
+  Animal(){
+    _counter++;
+    print("There are $_counter of us");
+  }
+
+  static void run(){
+    print("running");
+  }
+
+  static void speak(){
+    print("speaking");
+    run();
+  }
 
 /*
   void sayHello(){
