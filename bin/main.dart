@@ -157,9 +157,24 @@ main(List<String> arguments) {
 */
 
 //homework scopes
+/*
 import 'package:dartIntermediate/person.dart';
 main(List<String> args){
   Person paco = new Person(33);
 
   print("The person's age is: ${paco.age}");
+}
+*/
+
+//inheritance
+
+import 'package:dartIntermediate/feline.dart';
+
+main(List<String> args){
+
+  Feline cat = new Feline();
+
+  cat.breath();
+
+  cat.test();
 }

@@ -44,7 +44,7 @@ Animal(String name, int age, String breed){
   int get age => _age;
   void set age(int value) => _age = value * 7;
 */
-
+/*
   static int _counter = 0; //
   Animal(){
     _counter++;
@@ -59,7 +59,7 @@ Animal(String name, int age, String breed){
     print("speaking");
     run();
   }
-
+*/
 /*
   void sayHello(){
     if(_name.isEmpty){
@@ -69,11 +69,15 @@ Animal(String name, int age, String breed){
     }
   }
   */
-
+/*
   void sayHello() => print("Hello my name is ${_name} I am ${_age} years old,"
       "and I am a ${breed}");
 
   void _display(String message) => print("message: $message");
 
   void saySomething(String message) => this._display(message);
+  */
+
+  bool isAlive = true;
+  void breath() => print("breathing");
 }
