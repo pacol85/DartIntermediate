@@ -167,7 +167,7 @@ main(List<String> args){
 */
 
 //inheritance
-
+/*
 import 'package:dartIntermediate/feline.dart';
 
 main(List<String> args){
@@ -177,4 +177,14 @@ main(List<String> args){
   cat.breath();
 
   cat.test();
+}
+*/
+
+//Mixins
+import 'package:dartIntermediate/monster.dart';
+main(List<String> args){
+
+  Monster ugly = new Monster();
+
+  ugly.test();
 }
