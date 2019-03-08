@@ -203,9 +203,20 @@ main(List<String> args){
 */
 
 //Abstraction
+/*
 import 'package:dartIntermediate/racecar.dart';
 main(List<String> args){
   RaceCar rc = new RaceCar();
 
   rc.honk();
+}
+*/
+
+//Homework
+import 'package:dartIntermediate/bnb.dart';
+main(List<String> args){
+  BnB bed = new BnB();
+  bed.ringDoorbell();
+  bed.guest = 20;
+  bed.rooms = 10;
 }
