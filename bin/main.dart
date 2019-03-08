@@ -181,10 +181,21 @@ main(List<String> args){
 */
 
 //Mixins
+/*
 import 'package:dartIntermediate/monster.dart';
 main(List<String> args){
 
   Monster ugly = new Monster();
 
   ugly.test();
+}
+*/
+
+//Interfaces --> a contract between two classes
+import 'package:dartIntermediate/manager.dart';
+main(List<String> args){
+
+  Manager bob = new Manager();
+
+  bob.test();
 }
