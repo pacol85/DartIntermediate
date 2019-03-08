@@ -192,10 +192,20 @@ main(List<String> args){
 */
 
 //Interfaces --> a contract between two classes
+/*
 import 'package:dartIntermediate/manager.dart';
 main(List<String> args){
 
   Manager bob = new Manager();
 
   bob.test();
+}
+*/
+
+//Abstraction
+import 'package:dartIntermediate/racecar.dart';
+main(List<String> args){
+  RaceCar rc = new RaceCar();
+
+  rc.honk();
 }
