@@ -213,10 +213,34 @@ main(List<String> args){
 */
 
 //Homework
+/*
 import 'package:dartIntermediate/bnb.dart';
 main(List<String> args){
   BnB bed = new BnB();
   bed.ringDoorbell();
   bed.guest = 20;
   bed.rooms = 10;
+}
+*/
+
+//Generics
+
+main(List<String> args){
+  List<int> numbers = new List<int>();
+
+  numbers.addAll([1,2,3,4]);
+  print(numbers);
+
+  List<String> strings = new List<String>();
+  strings.addAll(["a", "b", "c"]);
+  print(strings);
+
+  add<int>(1, 2);
+  add<double>(1.01, 2.09);
+  add<String>('hello','world');
+}
+
+//It only works if you extend otherwise it wont, it can't be totally generic
+void add<T extends num>(T a, T b) {
+  print(a + b);
 }
