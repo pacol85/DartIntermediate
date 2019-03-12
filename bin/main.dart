@@ -224,7 +224,7 @@ main(List<String> args){
 */
 
 //Generics
-
+/*
 main(List<String> args){
   List<int> numbers = new List<int>();
 
@@ -243,4 +243,29 @@ main(List<String> args){
 //It only works if you extend otherwise it wont, it can't be totally generic
 void add<T extends num>(T a, T b) {
   print(a + b);
+}
+*/
+
+//Example of Generics
+
+main(List<String> args){
+
+  //List by default are generics but I need to indicate it as int for it to work
+  //with my generic function
+  List<int> values = [1,2,3,4,5];
+
+  print(add(0, values));
+
+  List<double> val = [1.9, 2.45, 3.24];
+  print(add(0, val));
+}
+
+//generic function
+T add<T extends num>(T value, List<T> items){
+  T ret = value;
+  items.forEach((val) {
+    ret = ret + val;
+  });
+
+  return ret;
 }
