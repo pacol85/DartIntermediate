@@ -247,7 +247,7 @@ void add<T extends num>(T a, T b) {
 */
 
 //Example of Generics
-
+/*
 main(List<String> args){
 
   //List by default are generics but I need to indicate it as int for it to work
@@ -268,4 +268,17 @@ T add<T extends num>(T value, List<T> items){
   });
 
   return ret;
+}
+*/
+
+//Generic Class
+import 'package:dartIntermediate/counter.dart';
+main(List<String> args){
+  Counter<double> doubles = new Counter<double>();
+  doubles.addAll([1.0, 2.2, 3.3]);
+  doubles.total();
+
+  Counter<int> ints = new Counter<int>();
+  ints.addAll([5, 7, 21]);
+  ints.total();
 }
