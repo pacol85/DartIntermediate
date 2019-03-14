@@ -12,3 +12,5 @@ include: package:pedantic/analysis_options.yaml
 analyzer:
 #   exclude:
 #     - path/to/excluded/files/**
+  errors:
+    mixin_inherits_from_not_object: ignore

@@ -272,6 +272,7 @@ T add<T extends num>(T value, List<T> items){
 */
 
 //Generic Class
+/*
 import 'package:dartIntermediate/counter.dart';
 main(List<String> args){
   Counter<double> doubles = new Counter<double>();
@@ -281,4 +282,12 @@ main(List<String> args){
   Counter<int> ints = new Counter<int>();
   ints.addAll([5, 7, 21]);
   ints.total();
+}
+*/
+
+//Homework 5
+
+import 'package:dartIntermediate/payroll.dart';
+main(List<String> args){
+  Payroll p = new Payroll();
 }

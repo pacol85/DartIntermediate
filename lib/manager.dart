@@ -1,9 +1,9 @@
 import 'employee.dart';
 
-class Manager implements Employee{
+class Manager extends Employee{
   //when we implement we got to have all getters and setters
   //when you implement you have to build from the ground up
-
+/*
   String name = "Bob";
 
   //void test() => print("I am a manager");
@@ -11,5 +11,10 @@ class Manager implements Employee{
   void test(){
     print("text in the manager class");
     print(super.toString());
+  }
+*/
+  //homework
+  void sayHello(){
+    print("Manager Class");
   }
 }
