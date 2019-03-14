@@ -315,13 +315,14 @@ main(List<String> args){
 import 'dart:io';
 
 main(List<String> args){
-  String path = 'C:\\';
-  Directory dir = new Directory(path);
+  Directory dir = Directory.systemTemp.createTempSync();
 
-  //existsSync indica que estamos esperando que se den las cosas antes
+  print(dir.path);
+
   if(dir.existsSync()){
-    print("exist");
+    print("removing ${dir.path}");
+    dir.deleteSync();
   }else{
-    print("not found");
+    print("Couldnot find ${dir.path}");
   }
 }
