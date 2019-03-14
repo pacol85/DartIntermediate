@@ -286,8 +286,42 @@ main(List<String> args){
 */
 
 //Homework 5
-
+/*
 import 'package:dartIntermediate/payroll.dart';
 main(List<String> args){
   Payroll p = new Payroll();
+}
+*/
+
+
+//Sync
+/*
+import 'dart:io';
+
+main(List<String> args){
+  String path = 'C:\\';
+  Directory dir = new Directory(path);
+
+  //existsSync indica que estamos esperando que se den las cosas antes
+  if(dir.existsSync()){
+    print("exist");
+  }else{
+    print("not found");
+  }
+}
+*/
+
+//System temp directory
+import 'dart:io';
+
+main(List<String> args){
+  String path = 'C:\\';
+  Directory dir = new Directory(path);
+
+  //existsSync indica que estamos esperando que se den las cosas antes
+  if(dir.existsSync()){
+    print("exist");
+  }else{
+    print("not found");
+  }
 }
