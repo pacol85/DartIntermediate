@@ -312,6 +312,7 @@ main(List<String> args){
 */
 
 //System temp directory
+/*
 import 'dart:io';
 
 main(List<String> args){
@@ -325,4 +326,31 @@ main(List<String> args){
   }else{
     print("Couldnot find ${dir.path}");
   }
+}
+*/
+
+//List items
+
+import 'dart:io';
+
+main(List<String> args){
+  Directory dir = Directory.current;
+
+ print(dir.path);
+ 
+ List<FileSystemEntity> list = dir.listSync(recursive: true);
+ print("Entries in list: ${list.length}");
+ 
+ list.forEach((FileSystemEntity value){
+   FileStat stat = value.statSync();
+
+   print('Value: ${value.path}');
+   print('Type: ${stat.type}');
+   print('Changed: ${stat.changed}');
+   print('Modified: ${stat.modified}');
+   print('Accessed: ${stat.accessed}');;
+   print('Mode ${stat.mode}');
+   print('Size ${stat.size}');
+   print('');
+ });
 }
