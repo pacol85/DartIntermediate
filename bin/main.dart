@@ -357,7 +357,7 @@ main(List<String> args){
 */
 
 //Accessing files
-
+/*
 import 'dart:io';
 
 main(List<String> args){
@@ -398,4 +398,43 @@ void readFile(File file){
   values.forEach((v){
     print(v);
   });
+}
+*/
+
+//Homework
+import 'dart:io';
+main(List<String> args){
+  Directory dir = Directory.current;
+  print(dir.path);
+  File file = new File(dir.path + '\\myFile.txt');
+  writeFile(file);
+  readFile(file);
+  deleteFile(file);
+}
+
+void writeFile(File file){
+  RandomAccessFile raf = file.openSync(mode: FileMode.write);
+  raf.writeStringSync("Hello World");
+  raf.closeSync();
+}
+
+void readFile(File file){
+  if(!file.existsSync()){
+    print("File not found");
+    return;
+  }
+
+  print("Reading string...");
+  print(file.readAsStringSync());
+}
+
+void deleteFile(File file){
+  if(!file.existsSync()){
+    print("File not found");
+    return;
+  }else{
+    //delete
+    file.deleteSync();
+    print("File deleted...");
+  }
 }
