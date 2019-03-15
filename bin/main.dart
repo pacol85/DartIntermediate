@@ -330,7 +330,7 @@ main(List<String> args){
 */
 
 //List items
-
+/*
 import 'dart:io';
 
 main(List<String> args){
@@ -353,4 +353,49 @@ main(List<String> args){
    print('Size ${stat.size}');
    print('');
  });
+}
+*/
+
+//Accessing files
+
+import 'dart:io';
+
+main(List<String> args){
+
+  Directory dir = Directory.current;
+  print(dir.path);
+
+  File file = new File(dir.path + '\\myFile.txt');
+
+  writeFile(file);
+
+  readFile(file);
+
+  //deleteFile
+  file.deleteSync();
+}
+
+void writeFile(File file){
+  //append or write to the file
+
+  RandomAccessFile raf = file.openSync(mode: FileMode.append);
+  raf.writeStringSync("Hello World\r\nHow are you today?");
+  raf.flushSync(); //not needed because close does the flush on background as well
+  raf.closeSync();
+}
+
+void readFile(File file){
+  if(!file.existsSync()){
+    print("File not found");
+    return;
+  }
+
+  print("Reading string...");
+  print(file.readAsStringSync());
+
+  print("Reading bytes...");
+  List values = file.readAsBytesSync();
+  values.forEach((v){
+    print(v);
+  });
 }
